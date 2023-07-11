@@ -1,0 +1,46 @@
+.ingredient{
+  width: 30rem;
+  margin: 2rem auto;
+  max-width: 80%;
+}
+
+.control label,
+.control input {
+  display: block;
+  width: 100%;
+}
+
+.control input {
+  font: inherit;
+  padding: 0.1rem 0.25rem;
+  border: none;
+  border-bottom: 2px solid rgb(235, 241, 228);
+  margin-bottom: 1rem;
+}
+
+.control input:focus {
+  outline: none;
+  border-bottom-color: #de1c4c;
+}
+
+.ingredient_actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ingredient_actions button {
+  /* background-color: #0c754e; */
+  /* color: white; */
+  padding: 12px;
+  font-size: 16px;
+  margin: 2px 2px;
+  border-radius: 12px;
+  color: #040304;
+  background-color: rgb(35, 158, 69);
+  box-shadow: 0 0 5px cyan,0 0 15px cyan;
+}
+.ingredient_actions button:hover {
+  background-color: #9b59e6;
+  cursor: pointer;
+  box-shadow:0 0 5px cyan,0 0 25px cyan,0 0 50px cyan,0 0 200px cyan;
+}
