@@ -1,7 +1,7 @@
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from "react-redux";
 
-import { counterActions } from '../store/counter';
-import classes from './Counter.module.css';
+import { counterActions } from "../store/counter";
+import classes from "./Counter.module.css";
 
 const Counter = () => {
   const dispatch = useDispatch();
@@ -15,7 +15,7 @@ const Counter = () => {
   const increaseHandler = () => {
     dispatch(counterActions.increase(10)); // { type: SOME_UNIQUE_IDENTIFIER, payload: 10 }
   };
-
+  //BTS the redux toolkit automatically generate this UNIQUE IDENTIFIER and payload as shown above
   const decrementHandler = () => {
     dispatch(counterActions.decrement());
   };
